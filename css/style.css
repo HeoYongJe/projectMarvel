@@ -1,0 +1,136 @@
+/* reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'GmarketSansLight', sans-serif !important;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html body a {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+.a11yHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.clearfix {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+h1 {
+    display: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .mainMenu {
+    width: 1170px;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+}
+
+.mainMenu ul li {
+    float: left;
+    padding: 0 30px;
+}
+
+.mainMenu ul li a {
+    color: #bbb;
+}
+
+.mainMenu ul li a:hover {
+    color: #fff;
+}
+
+/* //header end */
+
+/* main */
+main {
+    margin-top: 80px;
+    width: 100%;
+}
+
+/* mainVisual */
+main #mainVisual {
+    background: url(../img/back01.jpg)no-repeat 85%;
+    height: 700px;
+    background-size: cover;
+}
+/* //mainVisual end */
+
+/* itemMenu */
+main #itemMenu {
+    margin: 0 auto;
+    width: 100%;
+    background: #f9f9f9;
+}
+
+#itemMenu .menuList {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menuList ul {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+.menuList ul li a {
+    color: #888;
+}
+
+.menuList ul li a:hover {
+    color: #1b1b1b
+}
+/* //itemMenu end */
+
+/* itemList */
+#itemList {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#itemList ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#itemList ul li {
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    border: 1px solid #fff;
+}
