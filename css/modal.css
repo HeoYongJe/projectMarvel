@@ -20,7 +20,7 @@
     }
     
     .movie-list-item-img {
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 270px;
     height: 200px;
     object-fit: cover;
