@@ -1,4 +1,5 @@
 /* reset */
+
 html,
 body {
     margin: 0;
@@ -11,14 +12,15 @@ li,
 dl,
 dt,
 dd {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 html body a {
     color: #1b1b1b;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .a11yHidden {
@@ -40,20 +42,29 @@ h1 {
     display: none;
 }
 
+.pointColor{
+    color:#f5cc0f !important;
+}
+
 /* header */
 header {
     width: 100%;
-    background: #333;
+    background: #111;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 header .mainMenu {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     height: 80px;
     line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mainMenu ul li {
@@ -62,11 +73,48 @@ header .mainMenu {
 }
 
 .mainMenu ul li a {
-    color: #bbb;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .mainMenu ul li a:hover {
     color: #fff;
+}
+
+.mainMenu .search{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    background: #3d3d3d;
+    margin-right: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.mainMenu .search input{
+    outline: none;
+    border: 0;
+    width: 100%;
+    max-width: 180px;
+    padding: 0 8px;
+}
+
+.mainMenu .search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    background: 0;
+    border: 0;
+}
+
+.mainMenu .search button img{
+    width:42%;
 }
 
 /* //header end */
@@ -77,13 +125,21 @@ main {
     width: 100%;
 }
 
-/* mainVisual */
-main #mainVisual {
-    /* background: url(../img/back01.jpg)no-repeat 85%; */
-    /* height: 700px;
-    background-size: cover; */
+/* slide */
+.carousel-control.right{
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
-/* //mainVisual end */
+
+.carousel-control.left{
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-control:focus, .carousel-control:hover{
+    opacity: 0.8 !important;
+}
+/* //slide end */
 
 /* itemMenu */
 main #itemMenu {
@@ -100,7 +156,7 @@ main #itemMenu {
 
 .menuList ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 80px;
     align-items: center;
 }
@@ -137,3 +193,4 @@ main #itemMenu {
     border: 1px solid #fff;
 }
 */
+
