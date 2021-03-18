@@ -97,6 +97,8 @@ header .mainMenu {
 }
 
 .mainMenu .search input{
+    height: 98%;
+    line-height: 10px;
     outline: none;
     border: 0;
     width: 100%;
