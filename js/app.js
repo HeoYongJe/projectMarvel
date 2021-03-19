@@ -12,28 +12,81 @@ const modalClose1 = document.querySelector(".close1");
 const modalClose2 = document.querySelector(".close2");
 const modalClose3 = document.querySelector(".close3");
 
-
-modalBtn1.addEventListener("click", function(){
-    modalBg1.classList.add("bg-active");
+modalBtn1.addEventListener("click", function () {
+  modalBg1.classList.add("bg-active");
 });
 
-modalBtn2.addEventListener("click", function(){
-    modalBg2.classList.add("bg-active");
+modalBtn2.addEventListener("click", function () {
+  modalBg2.classList.add("bg-active");
 });
 
-modalBtn3.addEventListener("click", function(){
-    modalBg3.classList.add("bg-active");
+modalBtn3.addEventListener("click", function () {
+  modalBg3.classList.add("bg-active");
 });
 
-modalClose1.addEventListener("click", function(){
-    modalBg1.classList.remove("bg-active");
+modalClose1.addEventListener("click", function () {
+  modalBg1.classList.remove("bg-active");
 });
 
-modalClose2.addEventListener("click", function(){
-    modalBg2.classList.remove("bg-active");
+modalClose2.addEventListener("click", function () {
+  modalBg2.classList.remove("bg-active");
 });
 
-modalClose3.addEventListener("click", function(){
-    modalBg3.classList.remove("bg-active");
+modalClose3.addEventListener("click", function () {
+  modalBg3.classList.remove("bg-active");
 });
 
+/* 모달 동영상 제어 */
+
+let url1 = $(".clip1").attr("src");
+let url2 = $(".clip2").attr("src");
+let url3 = $(".clip3").attr("src");
+
+// 모달 열때 동영상 불러오기
+$(".button1").on("click", function () {
+  $(".clip1").attr("src", url1);
+});
+
+$(".button2").on("click", function () {
+  $(".clip2").attr("src", url2);
+});
+
+$(".button3").on("click", function () {
+  $(".clip3").attr("src", url3);
+});
+
+// 모달 닫을때 동영상 종료
+$(".modal-close").on("click", function () {
+  $(".modal-clip").attr("src", "");
+});
+
+
+// 모바일 메뉴버튼
+const $menuItem = document.getElementsByClassName('menuItem');
+const $mainMenu = document.getElementById('mainMenu');
+const $closeBtn = document.getElementById('closeBtn');
+const $mobileBtn = document.getElementById('mobileBtn');
+
+
+for (let i = 0; i < $menuItem.length; i++) {
+
+  $menuItem[i].addEventListener('click', function () {
+    mainMenu.classList.remove('on');
+    mobileBtn.style.display = 'block';
+    closeBtn.style.display = 'none';
+  });
+
+}
+
+
+$mobileBtn.addEventListener('click', function (e) {
+  itemList.classList.add('on');
+  mobileBtn.style.display = 'none';
+  closeBtn.style.display = 'block';
+});
+
+$closeBtn.addEventListener('click', function (e) {
+  itemList.classList.remove('on');
+  mobileBtn.style.display = 'block';
+  closeBtn.style.display = 'none';
+});

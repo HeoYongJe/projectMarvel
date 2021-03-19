@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/respons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -15,12 +16,12 @@
 
 <body>
     <header>
-        <div class="mainMenu">
-            <ul class="clearfix">
-                <li>
+        <div id="mainMenu">
+            <ul id="itemList" class="clearfix">
+                <li class="menuItem">
                     <a class="pointColor" href="#">sign up</a>
                 </li>
-                <li>
+                <li class="menuItem">
                     <a href="#">sign in</a>
                 </li>
             </ul>
@@ -28,6 +29,15 @@
                 <input type="text" placeholder="search">
                 <button><img src="./img/search.png" alt="검색버튼이미지"></button>
             </div>
+            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                <span class="btnTop"></span>
+                <span class="btnMiddle"></span>
+                <span class="btnBottom"></span>
+            </button>
+            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                <span class="btnRight"></span>
+                <span class="btnLeft"></span>
+            </button>
         </div>
     </header>
     <main>
@@ -151,8 +161,8 @@
             <!-- 모달 -->
             <div class="modal-bg modal1">
                 <div class="modalPop">
-                    <iframe class="modal-clip" width="90%" height="50%" src="https://www.youtube.com/embed/OqhJvEDNrJc"
-                        frameborder="0"
+                    <iframe class="modal-clip clip1" width="90%" height="50%"
+                        src="https://www.youtube.com/embed/OqhJvEDNrJc" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h2 class="modal-title">인크레더블 헐크</h2>
@@ -171,36 +181,36 @@
 
             <div class="modal-bg modal2">
                 <div class="modalPop">
-                    <iframe class="modal-clip" width="90%" height="50%" src="https://www.youtube.com/embed/OqhJvEDNrJc"
-                        frameborder="0"
+                    <iframe class="modal-clip clip2" width="90%" height="50%"
+                        src="https://www.youtube.com/embed/OqhJvEDNrJc" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h2 class="modal-title">스파이더맨1</h2>
 
                     <p class="modal-contents">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, ipsum
                         autem. Nobis voluptate quis deleniti a numquam minus soluta aperiam natus porro accusantium!
-                        Maiores eum et ipsa adipisci itaque porro!</ㅔ>
-                        <div class="modal-comments"></div>
+                        Maiores eum et ipsa adipisci itaque porro!</p>
+                    <div class="modal-comments"></div>
 
-                        <button>댓글쓰기</button>
-                        <span class="modal-close close2"><i class="fas fa-times-circle"></i></span>
+                    <button>댓글쓰기</button>
+                    <span class="modal-close close2"><i class="fas fa-times-circle"></i></span>
                 </div>
             </div>
 
             <div class="modal-bg modal3">
                 <div class="modalPop">
-                    <iframe class="modal-clip" width="90%" height="50%" src="https://www.youtube.com/embed/OqhJvEDNrJc"
-                        frameborder="0"
+                    <iframe class="modal-clip clip3" width="90%" height="50%"
+                        src="https://www.youtube.com/embed/OqhJvEDNrJc" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h2 class="modal-title">아이언맨1</h2>
                     <p class="modal-contents">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, fugit
                         temporibus, mollitia id perferendis velit dolore ipsum ducimus illum voluptas adipisci eos
-                        sapiente obcaecati nemo sint fuga excepturi, amet quaerat.</ㅔ>
-                        <div class="modal-comments"></div>
+                        sapiente obcaecati nemo sint fuga excepturi, amet quaerat.</p>
+                    <div class="modal-comments"></div>
 
-                        <button>댓글쓰기</button>
-                        <span class="modal-close close3"><i class="fas fa-times-circle"></i></span>
+                    <button>댓글쓰기</button>
+                    <span class="modal-close close3"><i class="fas fa-times-circle"></i></span>
                 </div>
             </div>
         </section>
