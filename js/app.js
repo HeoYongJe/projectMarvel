@@ -59,3 +59,34 @@ $(".button3").on("click", function () {
 $(".modal-close").on("click", function () {
   $(".modal-clip").attr("src", "");
 });
+
+
+// 모바일 메뉴버튼
+const $menuItem = document.getElementsByClassName('menuItem');
+const $mainMenu = document.getElementById('mainMenu');
+const $closeBtn = document.getElementById('closeBtn');
+const $mobileBtn = document.getElementById('mobileBtn');
+
+
+for (let i = 0; i < $menuItem.length; i++) {
+
+  $menuItem[i].addEventListener('click', function () {
+    mainMenu.classList.remove('on');
+    mobileBtn.style.display = 'block';
+    closeBtn.style.display = 'none';
+  });
+
+}
+
+
+$mobileBtn.addEventListener('click', function (e) {
+  itemList.classList.add('on');
+  mobileBtn.style.display = 'none';
+  closeBtn.style.display = 'block';
+});
+
+$closeBtn.addEventListener('click', function (e) {
+  itemList.classList.remove('on');
+  mobileBtn.style.display = 'block';
+  closeBtn.style.display = 'none';
+});

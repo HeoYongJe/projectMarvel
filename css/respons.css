@@ -1,0 +1,123 @@
+@media screen and (max-width: 1280px) {}
+
+/* //1280끝 */
+
+
+@media screen and (max-width: 1024px) {}
+
+/* //1024끝 */
+
+
+@media screen and (min-width: 768px) {
+    #mobileBtn {
+        display: none !important;
+    }
+    #closeBtn{
+        display:none !important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    header #mainMenu {
+        justify-content: center;
+    }
+
+    .carousel-indicators {
+        z-index: 1 !important;
+    }
+
+    #itemList {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.92);
+        position: fixed;
+        top: 0;
+        z-index: 15 !important;
+        padding: 50px;
+    }
+
+    #mainMenu ul li {
+        float: none;
+        border-bottom: 1px solid #333;
+    }
+
+    #mobileBtn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        background: 0;
+        border: 0;
+    }
+
+    #mobileBtn:hover,
+    .menuBtn:focus {
+        /* background: #ccc; */
+    }
+
+    .btnTop,
+    .btnMiddle,
+    .btnBottom {
+        display: block;
+        width: 26px;
+        height: 3px;
+        margin: 5px auto;
+        background: #fff;
+        text-align: center;
+    }
+
+    #itemList.on {
+        display: block;
+        animation-name: fadeInAni;
+        animation-duration: .8s;
+        animation-timing-function: ease-out;
+    }
+
+    #itemList.off {
+        visibility: hidden;
+    }
+
+    #mobileBtn {
+        display: block;
+        outline: none;
+    }
+    
+    .menuClose {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        background: rgba(33, 55, 120, 0);
+        border: 0;
+        z-index: 16;
+        outline: none;
+    }
+    
+    .btnRight,
+    .btnLeft {
+        display: block;
+        width: 28px;
+        height: 3px;
+        margin: 0 auto;
+        background: #fff;
+    }
+    
+    .btnRight {
+        transform: translateY(50%) rotate(45deg);
+    }
+    
+    .btnLeft {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+/* //767끝 */
+
+/* 모바일용 햄버거 버튼 */

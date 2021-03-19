@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/respons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -15,12 +16,12 @@
 
 <body>
     <header>
-        <div class="mainMenu">
-            <ul class="clearfix">
-                <li>
+        <div id="mainMenu">
+            <ul id="itemList" class="clearfix">
+                <li class="menuItem">
                     <a class="pointColor" href="#">sign up</a>
                 </li>
-                <li>
+                <li class="menuItem">
                     <a href="#">sign in</a>
                 </li>
             </ul>
@@ -28,6 +29,15 @@
                 <input type="text" placeholder="search">
                 <button><img src="./img/search.png" alt="검색버튼이미지"></button>
             </div>
+            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                <span class="btnTop"></span>
+                <span class="btnMiddle"></span>
+                <span class="btnBottom"></span>
+            </button>
+            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                <span class="btnRight"></span>
+                <span class="btnLeft"></span>
+            </button>
         </div>
     </header>
     <main>
