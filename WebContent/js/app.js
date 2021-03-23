@@ -93,13 +93,21 @@ for (let i = 0; i < $menuItem.length; i++) {
   });
 }
 
+<<<<<<< HEAD:js/app.js
 $mobileBtn.addEventListener("click", function (e) {
+=======
+$mobileBtn.addEventListener("click", function () {
+>>>>>>> origin:WebContent/js/app.js
   itemList.classList.add("on");
   mobileBtn.style.display = "none";
   closeBtn.style.display = "block";
 });
 
+<<<<<<< HEAD:js/app.js
 $closeBtn.addEventListener("click", function (e) {
+=======
+$closeBtn.addEventListener("click", function () {
+>>>>>>> origin:WebContent/js/app.js
   itemList.classList.remove("on");
   mobileBtn.style.display = "block";
   closeBtn.style.display = "none";

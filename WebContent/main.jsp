@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -14,15 +17,28 @@
     <title>MARVEL Project</title>
 </head>
 
-<body>
+<body scroll="no">
+    <%
+		String userID = null;
+		if (session.getAttribute("userID") != null); {
+			userID = (String) session.getAttribute("userID");
+		}
+	%>
+    <%
+		if(userID == null) {
+	%>
     <header>
         <div id="mainMenu">
+            <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
             <ul id="itemList" class="clearfix">
                 <li class="menuItem">
-                    <a class="pointColor" href="#">sign up</a>
+                    <a class="pointColor" href="join.jsp">sign up</a>
                 </li>
                 <li class="menuItem">
-                    <a href="#">sign in</a>
+                    <a href="login.jsp">sign in</a>
+                </li>
+                <li>
+                    <a href="bbs.jsp">board</a>
                 </li>
             </ul>
             <div class="search">
@@ -40,8 +56,42 @@
             </button>
         </div>
     </header>
+    <%
+		} else {
+	%>
+    <header>
+        <div id="mainMenu">
+            <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
+            <ul id="itemList" class="clearfix">
+                <li class="menuItem">
+                    <a class="pointColor" href="#">my page</a>
+                </li>
+                <li class="menuItem">
+                    <a href="logoutAction.jsp">sign out</a>
+                </li>
+                <li>
+                    <a href="bbs.jsp">board</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" id="search" onkeyup="filter()" placeholder="search">
+                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
+            </div>
+            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                <span class="btnTop"></span>
+                <span class="btnMiddle"></span>
+                <span class="btnBottom"></span>
+            </button>
+            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                <span class="btnRight"></span>
+                <span class="btnLeft"></span>
+            </button>
+        </div>
+    </header>
+    <%
+		}
+	%>
     <main>
-        <h1>마블 프로젝트 입니다</h1>
         <section>
             <div id="mainVisual">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -81,16 +131,16 @@
             <div class="menuList">
                 <ul>
                     <li>
-                        <a href="#">All</a>
+                        <a href="bbs.jsp">All</a>
                     </li>
                     <li>
-                        <a class="sub-hulk" href="#">헐크</a>
+                        <a class="sub-hulk" href="bbs.jsp">헐크</a>
                     </li>
                     <li>
-                        <a href="#">스파이더맨</a>
+                        <a href="bbs.jsp">스파이더맨</a>
                     </li>
                     <li>
-                        <a href="#">아이언맨</a>
+                        <a href="bbs.jsp">아이언맨</a>
                     </li>
                 </ul>
             </div>
