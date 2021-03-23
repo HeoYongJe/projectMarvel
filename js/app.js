@@ -1,3 +1,22 @@
+/* 검색 */
+function filter() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let listInner = document.getElementsByClassName("movie-list-item");
+
+  for (let i = 0; i < listInner.length; i++) {
+    title = listInner[i].getElementsByClassName("movie-list-item-title");
+    desc = listInner[i].getElementsByClassName("movie-list-item-desc");
+    if (
+      desc[0].innerHTML.toLowerCase().indexOf(search) != -1 ||
+      title[0].innerHTML.toLowerCase().indexOf(search) != -1
+    ) {
+      listInner[i].style.display = "flex";
+    } else {
+      listInner[i].style.display = "none";
+    }
+  }
+}
+
 /* 모달 */
 // const modalBtn = document.querySelector(".movie-list-item-button");
 const modalBtn1 = document.querySelector(".button1");
@@ -60,33 +79,28 @@ $(".modal-close").on("click", function () {
   $(".modal-clip").attr("src", "");
 });
 
-
 // 모바일 메뉴버튼
-const $menuItem = document.getElementsByClassName('menuItem');
-const $mainMenu = document.getElementById('mainMenu');
-const $closeBtn = document.getElementById('closeBtn');
-const $mobileBtn = document.getElementById('mobileBtn');
-
+const $menuItem = document.getElementsByClassName("menuItem");
+const $mainMenu = document.getElementById("mainMenu");
+const $closeBtn = document.getElementById("closeBtn");
+const $mobileBtn = document.getElementById("mobileBtn");
 
 for (let i = 0; i < $menuItem.length; i++) {
-
-  $menuItem[i].addEventListener('click', function () {
-    mainMenu.classList.remove('on');
-    mobileBtn.style.display = 'block';
-    closeBtn.style.display = 'none';
+  $menuItem[i].addEventListener("click", function () {
+    mainMenu.classList.remove("on");
+    mobileBtn.style.display = "block";
+    closeBtn.style.display = "none";
   });
-
 }
 
-
-$mobileBtn.addEventListener('click', function (e) {
-  itemList.classList.add('on');
-  mobileBtn.style.display = 'none';
-  closeBtn.style.display = 'block';
+$mobileBtn.addEventListener("click", function (e) {
+  itemList.classList.add("on");
+  mobileBtn.style.display = "none";
+  closeBtn.style.display = "block";
 });
 
-$closeBtn.addEventListener('click', function (e) {
-  itemList.classList.remove('on');
-  mobileBtn.style.display = 'block';
-  closeBtn.style.display = 'none';
+$closeBtn.addEventListener("click", function (e) {
+  itemList.classList.remove("on");
+  mobileBtn.style.display = "block";
+  closeBtn.style.display = "none";
 });
