@@ -18,6 +18,15 @@
 </head>
 
 <body scroll="no">
+    <%
+		String userID = null;
+		if (session.getAttribute("userID") != null); {
+			userID = (String) session.getAttribute("userID");
+		}
+	%>
+    <%
+		if(userID == null) {
+	%>
     <header>
         <div id="mainMenu">
             <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
@@ -33,7 +42,7 @@
                 </li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="search">
+                <input type="text" id="search" onkeyup="filter()" placeholder="search">
                 <button><img src="./img/search.png" alt="검색버튼이미지"></button>
             </div>
             <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
@@ -47,6 +56,41 @@
             </button>
         </div>
     </header>
+    <%
+		} else {
+	%>
+    <header>
+        <div id="mainMenu">
+            <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
+            <ul id="itemList" class="clearfix">
+                <li class="menuItem">
+                    <a class="pointColor" href="#">my page</a>
+                </li>
+                <li class="menuItem">
+                    <a href="logoutAction.jsp">sign out</a>
+                </li>
+                <li>
+                    <a href="bbs.jsp">board</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" id="search" onkeyup="filter()" placeholder="search">
+                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
+            </div>
+            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                <span class="btnTop"></span>
+                <span class="btnMiddle"></span>
+                <span class="btnBottom"></span>
+            </button>
+            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                <span class="btnRight"></span>
+                <span class="btnLeft"></span>
+            </button>
+        </div>
+    </header>
+    <%
+		}
+	%>
     <main>
         <section>
             <div id="mainVisual">
@@ -112,55 +156,35 @@
                 </li>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/spiderman.jpg" alt="">
-                    <span class="movie-list-item-title">Spider-Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
+                    <span class="movie-list-item-title">스파이더맨</span>
+                    <p class="movie-list-item-desc">Spider Man, 2008</p>
                     <button class="movie-list-item-button button2">More</button>
                 </li>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/ironman.jpg" alt="">
-                    <span class="movie-list-item-title">Iron Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
+                    <span class="movie-list-item-title">아이언맨</span>
+                    <p class="movie-list-item-desc">Iron Man, 2008</p>
                     <button class="movie-list-item-button button3">More</button>
                 </li>
             </ul>
             <ul>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
-                    <span class="movie-list-item-title">Incredible Hulk</span>
+                    <span class="movie-list-item-title">인크레더블 헐크</span>
                     <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
+                    <button class="movie-list-item-button button1">More</button>
                 </li>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/spiderman.jpg" alt="">
-                    <span class="movie-list-item-title">Spider-Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
+                    <span class="movie-list-item-title">스파이더맨</span>
+                    <p class="movie-list-item-desc">Spider Man, 2008</p>
+                    <button class="movie-list-item-button button2">More</button>
                 </li>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/ironman.jpg" alt="">
-                    <span class="movie-list-item-title">Iron Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
-                </li>
-            </ul>
-            <ul>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
-                    <span class="movie-list-item-title">Incredible Hulk</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
-                </li>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/spiderman.jpg" alt="">
-                    <span class="movie-list-item-title">Spider-Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
-                </li>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/ironman.jpg" alt="">
-                    <span class="movie-list-item-title">Iron Man</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button">More</button>
+                    <span class="movie-list-item-title">아이언맨</span>
+                    <p class="movie-list-item-desc">Iron Man, 2008</p>
+                    <button class="movie-list-item-button button3">More</button>
                 </li>
             </ul>
 
@@ -196,9 +220,10 @@
                     <p class="modal-contents">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, ipsum
                         autem. Nobis voluptate quis deleniti a numquam minus soluta aperiam natus porro accusantium!
                         Maiores eum et ipsa adipisci itaque porro!</p>
-                    <div class="modal-comments"></div>
-
-                    <button>댓글쓰기</button>
+                    <div class="modal-comments clearfix">
+                        <input type="text" placeholder="search">
+                        <button>댓글쓰기</button>
+                    </div>
                     <span class="modal-close close2"><i class="fas fa-times-circle"></i></span>
                 </div>
             </div>
@@ -213,9 +238,10 @@
                     <p class="modal-contents">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, fugit
                         temporibus, mollitia id perferendis velit dolore ipsum ducimus illum voluptas adipisci eos
                         sapiente obcaecati nemo sint fuga excepturi, amet quaerat.</p>
-                    <div class="modal-comments"></div>
-
-                    <button>댓글쓰기</button>
+                    <div class="modal-comments clearfix">
+                        <input type="text" placeholder="search">
+                        <button>댓글쓰기</button>
+                    </div>
                     <span class="modal-close close3"><i class="fas fa-times-circle"></i></span>
                 </div>
             </div>
