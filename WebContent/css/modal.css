@@ -6,12 +6,17 @@
     margin-right: 30px;
     position: relative;
     text-align: center;
+    width: 33%;
+    margin: 1% !important;
+    overflow:hidden;
+    border-radius: 8px;
 }
 
 .movie-list-item:hover .movie-list-item-img {
     transform: scale(1.2);
-    margin: 0 30px;
+    /* margin: 0 30px; */
     opacity: 0.4;
+    transition: 0.4s;
 }
 
 .movie-list-item:hover .movie-list-item-title,
@@ -21,11 +26,9 @@
 }
 
 .movie-list-item-img {
-    transition: all 0.5s ease-in-out;
-    width: 270px;
-    height: 200px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
     object-fit: cover;
-    border-radius: 20px;
 }
 
 .movie-list-item-title {
@@ -73,25 +76,13 @@
 }
 
 .movie-list-item-button {
-    /* padding: 10px;
-    background-color: #4dbf00;
-    color: white;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    opacity: 0;
-    transition: 1s all ease-in-out; */
     padding: 5px 18px 7px 18px;
     color: #1b1b1b;
     border-radius: 3px;
     outline: none;
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
+    bottom: 20%;
     left: 50%;
     opacity: 0;
     transition: 0.3s all ease-in-out;

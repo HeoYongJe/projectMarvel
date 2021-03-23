@@ -1,9 +1,22 @@
-@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1280px) {
+
+    #itemList{
+        margin-left:-250px !important;
+    }
+
+}
 
 /* //1280끝 */
 
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+
+    #itemList{
+        margin-left:0px !important;
+    }
+
+}
 
 /* //1024끝 */
 
@@ -20,7 +33,18 @@
 
 @media screen and (max-width: 767px) {
     header #mainMenu {
-        justify-content: center;
+        justify-content: end;
+    }
+    header h1 img{
+        width:60%;
+    }
+
+    #mainMenu .search input{
+        max-width: 140px;
+    }
+
+    #mainMenu .search button{
+        width: 50px;
     }
 
     .carousel-indicators {
@@ -34,7 +58,6 @@
         background: rgba(0, 0, 0, 0.92);
         position: fixed;
         top: 0;
-        left:0;
         z-index: 15 !important;
         padding: 50px;
     }
