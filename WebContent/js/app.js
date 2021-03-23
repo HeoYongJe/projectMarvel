@@ -79,13 +79,13 @@ for (let i = 0; i < $menuItem.length; i++) {
 }
 
 
-$mobileBtn.addEventListener('click', function (e) {
+$mobileBtn.addEventListener('click', function () {
   itemList.classList.add('on');
   mobileBtn.style.display = 'none';
   closeBtn.style.display = 'block';
 });
 
-$closeBtn.addEventListener('click', function (e) {
+$closeBtn.addEventListener('click', function () {
   itemList.classList.remove('on');
   mobileBtn.style.display = 'block';
   closeBtn.style.display = 'none';
