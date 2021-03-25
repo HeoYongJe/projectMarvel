@@ -42,8 +42,8 @@
                 </li>
             </ul>
             <div class="search">
-                <input type="text" id="search" onkeyup="filter()" placeholder="search">
-                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
+                <input type="text" id="search" onkeyup="if(window.event.keyCode==13){filter()}" placeholder="search">
+                <button><img src="./img/search.png" alt="검색버튼이미지" onclick=filter()></button>
             </div>
             <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
                 <span class="btnTop"></span>
@@ -74,8 +74,8 @@
                 </li>
             </ul>
             <div class="search">
-                <input type="text" id="search" onkeyup="filter()" placeholder="search">
-                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
+                <input type="text" id="search" onkeyup="if(window.event.keyCode==13){filter()}" placeholder="search">
+                <button><img src="./img/search.png" alt="검색버튼이미지" onclick=filter()></button>
             </div>
             <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
                 <span class="btnTop"></span>
@@ -131,16 +131,16 @@
             <div class="menuList">
                 <ul>
                     <li>
-                        <a href="bbs.jsp">All</a>
+                        <button type="button" onclick="filterItem('all')">All</button>
                     </li>
                     <li>
-                        <a class="sub-hulk" href="bbs.jsp">헐크</a>
+                        <button type="button" onclick="filterItem('hulk')">헐크</button>
                     </li>
                     <li>
-                        <a href="bbs.jsp">스파이더맨</a>
+                        <button type="button" onclick="filterItem('spider')">스파이더맨</button>
                     </li>
                     <li>
-                        <a href="bbs.jsp">아이언맨</a>
+                        <button type="button" onclick="filterItem('iron')">아이언맨</button>
                     </li>
                 </ul>
             </div>

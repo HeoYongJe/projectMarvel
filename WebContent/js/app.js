@@ -17,8 +17,39 @@ function filter() {
   }
 }
 
+/* 해시태그 메뉴 */
+function filterItem(obj) {
+  const all = "";
+  const hulk = "헐크";
+  const iron = "아이언맨";
+  const spider = "스파이더맨";
+
+  // 파라미터
+  if (obj == "hulk") {
+    obj = hulk;
+  } else if (obj == "iron") {
+    obj = iron;
+  } else if (obj == "spider") {
+    obj = spider;
+  } else {
+    obj = all;
+  }
+
+  // 클릭 이벤트
+  let listInner = document.getElementsByClassName("movie-list-item");
+  for (let i = 0; i < listInner.length; i++) {
+    titleText = listInner[i].getElementsByClassName("movie-list-item-title");
+    titleSelectText = titleText[0].innerHTML;
+
+    if (titleSelectText.indexOf(obj) != -1) {
+      listInner[i].style.display = "flex";
+    } else {
+      listInner[i].style.display = "none";
+    }
+  }
+}
+
 /* 모달 */
-// const modalBtn = document.querySelector(".movie-list-item-button");
 const modalBtn1 = document.querySelector(".button1");
 const modalBtn2 = document.querySelector(".button2");
 const modalBtn3 = document.querySelector(".button3");
