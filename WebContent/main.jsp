@@ -131,19 +131,15 @@
             <div class="menuList">
                 <ul>
                     <li>
-                        <!-- <a href="bbs.jsp" onclick="filterItem('all')">All</a> -->
                         <button type="button" onclick="filterItem('all')">All</button>
                     </li>
                     <li>
-                        <!-- <a class="sub-hulk" href="bbs.jsp" onclick="filterItem('hulk')">헐크</a> -->
                         <button type="button" onclick="filterItem('hulk')">헐크</button>
                     </li>
                     <li>
-                        <!-- <a href="bbs.jsp" onclick="filterItem('spider')">스파이더맨</a> -->
                         <button type="button" onclick="filterItem('spider')">스파이더맨</button>
                     </li>
                     <li>
-                        <!-- <a href="bbs.jsp" onclick="filterItem('iron')">아이언맨</a> -->
                         <button type="button" onclick="filterItem('iron')">아이언맨</button>
                     </li>
                 </ul>
