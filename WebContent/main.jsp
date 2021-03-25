@@ -129,10 +129,10 @@
         </section>
         <section id="itemMenu">
             <div class="menuList">
-                <button type="button" class="btn" onclick="filterItem('all')">All</button>
-                <button type="button" class="btn" onclick="filterItem('hulk')">헐크</button>
-                <button type="button" class="btn" onclick="filterItem('spider')">스파이더맨</button>
-                <button type="button" class="btn" onclick="filterItem('iron')">아이언맨</button>
+                <button type="button" onclick="filterItem('all')">All</button>
+                <button type="button" onclick="filterItem('hulk')">헐크</button>
+                <button type="button" onclick="filterItem('spider')">스파이더맨</button>
+                <button type="button" onclick="filterItem('iron')">아이언맨</button>
             </div>
         </section>
         <section id="item-list-container">
@@ -162,26 +162,6 @@
                     <p class="movie-list-item-desc">Iron Man, 2008</p>
                     <button class="movie-list-item-button button3">More</button>
                 </li>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
-                    <span class="movie-list-item-title">인크레더블 헐크</span>
-                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
-                    <button class="movie-list-item-button button1">More</button>
-                </li>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/spiderman.jpg" alt="">
-                    <span class="movie-list-item-title">스파이더맨</span>
-                    <p class="movie-list-item-desc">Spider Man, 2008</p>
-                    <button class="movie-list-item-button button2">More</button>
-                </li>
-                <li class="movie-list-item">
-                    <img class="movie-list-item-img" src="img/ironman.jpg" alt="">
-                    <span class="movie-list-item-title">아이언맨</span>
-                    <p class="movie-list-item-desc">Iron Man, 2008</p>
-                    <button class="movie-list-item-button button3">More</button>
-                </li>
-            </ul>
-            <ul>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
                     <span class="movie-list-item-title">인크레더블 헐크</span>
