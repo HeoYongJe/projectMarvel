@@ -80,6 +80,7 @@ header #mainMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 #itemList {
@@ -138,8 +139,6 @@ header #mainMenu {
     width: 42%;
 }
 
-
-
 /* //header end */
 
 /* main */
@@ -164,63 +163,53 @@ main {
     opacity: 0.8 !important;
 }
 
+.carousel-inner img{
+    width:100%;
+}
 /* //slide end */
 
 /* itemMenu */
 main #itemMenu {
     margin: 0 auto;
     width: 100%;
-    background: #f9f9f9;
+    background: #333;
 }
 
 #itemMenu .menuList {
-    max-width: 1170px;
+    max-width: 1150px;
     width: 100%;
     margin: 0 auto;
 }
 
 .menuList ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     height: 80px;
     align-items: center;
 }
 
+.menuList ul li{
+    width:25%;
+    text-align: center;
+    overflow: hidden;
+}
+
 .menuList ul li a {
-    color: #888;
+    color: #fff;
+    padding:30px 0;
+    display:block;
+    transition: .3s;
 }
 
 .menuList ul li a:hover {
-    color: #1b1b1b;
+    color: #f5cc0f;
+    background:#111;
+    transition: .2s;
 }
 
 /* //itemMenu end */
 
-/* itemList */
-#item-list-container {
-    max-width: 1170px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 100px 0;
-}
-
-#item-list-container ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 삭제 
-#itemList ul li {
-    width: 300px;
-    height: 300px;
-    background: #f1f1f1;
-    border: 1px solid #fff;
-}
-*/
-
 /* 회원가입 / 로그인 */
-
 .signContent {
     max-width: 480px;
     width: 100%;
@@ -251,7 +240,7 @@ input::placeholder {
 
 .lockArea {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .lockArea input {
@@ -346,4 +335,32 @@ input::placeholder {
 .lastBtn:hover {
     background: #f5cc0f;
     color: #fff;
+}
+
+/* footer */
+#footer {
+    background: #111;
+}
+
+#footer .footerArea {
+    max-width: 1170px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    padding: 50px 5%;
+}
+
+.footerArea dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footerArea dl dd a {
+    color: #fff;
+}
+
+.footerArea dl dd a:hover {
+    color: #f5cc0f;
 }

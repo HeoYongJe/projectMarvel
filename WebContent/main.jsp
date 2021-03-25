@@ -17,7 +17,7 @@
     <title>MARVEL Project</title>
 </head>
 
-<body scroll="no">
+<body>
     <%
 		String userID = null;
 		if (session.getAttribute("userID") != null); {
@@ -155,6 +155,12 @@
                     <button class="movie-list-item-button button1">More</button>
                 </li>
                 <li class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
+                    <span class="movie-list-item-title">인크레더블 헐크</span>
+                    <p class="movie-list-item-desc">The Incredible Hulk, 2008</p>
+                    <button class="movie-list-item-button button1">More</button>
+                </li>
+                <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/spiderman.jpg" alt="">
                     <span class="movie-list-item-title">스파이더맨</span>
                     <p class="movie-list-item-desc">Spider Man, 2008</p>
@@ -166,8 +172,6 @@
                     <p class="movie-list-item-desc">Iron Man, 2008</p>
                     <button class="movie-list-item-button button3">More</button>
                 </li>
-            </ul>
-            <ul>
                 <li class="movie-list-item">
                     <img class="movie-list-item-img" src="img/hulk.jpg" alt="">
                     <span class="movie-list-item-title">인크레더블 헐크</span>
@@ -202,7 +206,7 @@
                         자기 자신과의 마지막 대결을 준비하는데...
                     </p>
                     <div class="modal-comments clearfix">
-                        <input type="text" placeholder="search">
+                        <input type="text" placeholder="comment">
                         <button>댓글쓰기</button>
                     </div>
                     <span class="modal-close close1"><i class="fas fa-times-circle"></i></span>
@@ -221,7 +225,7 @@
                         autem. Nobis voluptate quis deleniti a numquam minus soluta aperiam natus porro accusantium!
                         Maiores eum et ipsa adipisci itaque porro!</p>
                     <div class="modal-comments clearfix">
-                        <input type="text" placeholder="search">
+                        <input type="text" placeholder="comment">
                         <button>댓글쓰기</button>
                     </div>
                     <span class="modal-close close2"><i class="fas fa-times-circle"></i></span>
@@ -239,7 +243,7 @@
                         temporibus, mollitia id perferendis velit dolore ipsum ducimus illum voluptas adipisci eos
                         sapiente obcaecati nemo sint fuga excepturi, amet quaerat.</p>
                     <div class="modal-comments clearfix">
-                        <input type="text" placeholder="search">
+                        <input type="text" placeholder="comment">
                         <button>댓글쓰기</button>
                     </div>
                     <span class="modal-close close3"><i class="fas fa-times-circle"></i></span>
@@ -247,8 +251,28 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>각자 깃주소</p>
+    <footer id="footer">
+        <div class="footerArea">
+            <dl>
+                <dt>Heo Yong Je</dt>
+                <dd>
+                    <a href="https://github.com/HeoYongJe">https://github.com/HeoYongJe</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Kim Dong Hwi</dt>
+                <dd>
+                    <a href="https://github.com/donghwi-kor">https://github.com/donghwi-kor</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Kim Gi Tak</dt>
+                <dd>
+                    <a href="https://github.com/tuduly30">https://github.com/tuduly30</a>
+                </dd>
+            </dl>
+        </div>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
