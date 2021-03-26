@@ -21,6 +21,7 @@
     margin: 1% !important;
     overflow: hidden;
     border-radius: 8px;
+    max-height: 243px;
     /* float: left;
     max-height: 230px;
     height: 100%; */

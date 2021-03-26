@@ -194,14 +194,17 @@ main #itemMenu {
     overflow: hidden;
 }
 
-.menuList ul li a {
+.menuList ul li button{
     color: #fff;
-    padding:30px 0;
-    display:block;
+    padding: 30px 0;
     transition: .3s;
+    width: 100%;
+    border: 0;
+    background: none;
+    outline: none;
 }
 
-.menuList ul li a:hover {
+.menuList ul li button:hover {
     color: #f5cc0f;
     background:#111;
     transition: .2s;
