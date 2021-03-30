@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -129,10 +130,20 @@
         </section>
         <section id="itemMenu">
             <div class="menuList">
-                <button type="button" onclick="filterItem('all')">All</button>
-                <button type="button" onclick="filterItem('hulk')">헐크</button>
-                <button type="button" onclick="filterItem('spider')">스파이더맨</button>
-                <button type="button" onclick="filterItem('iron')">아이언맨</button>
+                <ul>
+                    <li>
+                        <button type="button" onclick="filterItem('all')">All</button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="filterItem('hulk')">헐크</button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="filterItem('spider')">스파이더맨</button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="filterItem('iron')">아이언맨</button>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="item-list-container">

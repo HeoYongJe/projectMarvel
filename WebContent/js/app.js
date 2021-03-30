@@ -50,7 +50,6 @@ function filterItem(obj) {
 }
 
 /* 모달 */
-// const modalBtn = document.querySelector(".movie-list-item-button");
 const modalBtn1 = document.querySelector(".button1");
 const modalBtn2 = document.querySelector(".button2");
 const modalBtn3 = document.querySelector(".button3");
