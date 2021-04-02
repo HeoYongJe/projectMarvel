@@ -41,7 +41,7 @@
     </header>
 	<div class="container">
 		<div class="signContent">
-            <h1>로그인</h1>
+            <h2>로그인</h2>
 			<div class="jumbotron">
 				<form method="post" action="loginAction.jsp">
 					<div class="form-group">

@@ -41,7 +41,7 @@
     </header>
 	<div class="container">
 		<div class="signContent">
-			<h1>회원가입하기</h1>
+			<h2>회원가입하기</h2>
 			<div class="jumbotron">
 				<form method="post" action="joinAction.jsp">
 					<div class="form-group lockArea">
