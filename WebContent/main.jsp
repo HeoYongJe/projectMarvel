@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter" %>
-<%@ page trimDirectiveWhitespaces="true" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+	<header>
     <%
 		String userID = null;
 		if (session.getAttribute("userID") != null); {
@@ -28,7 +29,6 @@
     <%
 		if(userID == null) {
 	%>
-    <header>
         <div id="mainMenu">
             <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
             <ul id="itemList" class="clearfix">
@@ -56,16 +56,14 @@
                 <span class="btnLeft"></span>
             </button>
         </div>
-    </header>
     <%
 		} else {
 	%>
-    <header>
         <div id="mainMenu">
             <h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
             <ul id="itemList" class="clearfix">
                 <li class="menuItem">
-                    <a class="pointColor" href="#">my page</a>
+                    <a class="pointColor" href="userUpdate.jsp">my page</a>
                 </li>
                 <li class="menuItem">
                     <a href="logoutAction.jsp">sign out</a>
@@ -88,10 +86,10 @@
                 <span class="btnLeft"></span>
             </button>
         </div>
-    </header>
     <%
 		}
 	%>
+	</header>
     <main>
         <section>
             <div id="mainVisual">

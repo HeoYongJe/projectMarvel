@@ -62,7 +62,7 @@ header {
     z-index: 16;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     margin: 0 !important;
 }
@@ -219,7 +219,7 @@ main #itemMenu {
     float: none;
 }
 
-.signContent h1 {
+.signContent h2 {
     font-size: 24px;
     margin-bottom: 40px !important;
 }
