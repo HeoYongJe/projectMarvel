@@ -4,20 +4,16 @@
 <%@ page import="bbs.BbsDAO" %>
 <%@ page import="bbs.Bbs" %>
 <%@ page import="java.util.ArrayList" %>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/respons.css">
 <title>JSP 게시판 웹 사이트</title>
-<style type="text/css">
-	a, a:hover {
-		color: #000000;
-		text-decoration: none;
-	}
-</style>
 </head>
 <body>
 	<%
@@ -30,56 +26,36 @@
 			pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
 		}
 	%>
-	<nav class="navbar navbar-default">
-		<div class="navbar=header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="bs=example-navbar-collapse-1"
-				aria-expanded="false">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="main.jsp">JSP 게시판 웹 사이트</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><a href="main.jsp">메인</a></li>
-				<li class="active"><a href="bbs.jsp">게시판</a></li>
-			</ul>
-			<%
-				if(userID == null) {
-			%>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">접속하기<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="login.jsp">로그인</a></li>
-						<li><a href="join.jsp">회원가입</a></li>
-					</ul>
-				</li>
-			</ul>
-			<%
-				} else {
-			%>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">회원관리<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="logoutAction.jsp">로그아웃</a></li>
-					</ul>
-				</li>
-			</ul>
-			<%
-				}
-			%>
-		</div>
-	</nav>
+	<header>
+        <div id="mainMenu">
+			<h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
+            <ul id="itemList" class="clearfix">
+                <li class="menuItem">
+                    <a class="pointColor" href="join.jsp">sign up</a>
+                </li>
+                <li class="menuItem">
+                    <a href="login.jsp">sign in</a>
+                </li>
+				<li><a href="bbs.jsp">board</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
+            </div>
+            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+                <span class="btnTop"></span>
+                <span class="btnMiddle"></span>
+                <span class="btnBottom"></span>
+            </button>
+            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+                <span class="btnRight"></span>
+                <span class="btnLeft"></span>
+            </button>
+        </div>
+    </header>
 	<div class="container">
-		<div class="row">
+		<div class="signContent">
+			<h2>게시판</h2>
 			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>
