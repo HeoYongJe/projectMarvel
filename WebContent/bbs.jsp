@@ -27,32 +27,76 @@
 		}
 	%>
 	<header>
-        <div id="mainMenu">
-			<h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
-            <ul id="itemList" class="clearfix">
-                <li class="menuItem">
-                    <a class="pointColor" href="join.jsp">sign up</a>
-                </li>
-                <li class="menuItem">
-                    <a href="login.jsp">sign in</a>
-                </li>
-				<li><a href="bbs.jsp">board</a></li>
-            </ul>
-            <div class="search">
-                <input type="text" placeholder="search">
-                <button><img src="./img/search.png" alt="검색버튼이미지"></button>
-            </div>
-            <button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
-                <span class="btnTop"></span>
-                <span class="btnMiddle"></span>
-                <span class="btnBottom"></span>
-            </button>
-            <button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
-                <span class="btnRight"></span>
-                <span class="btnLeft"></span>
-            </button>
-        </div>
-    </header>
+		<%
+			String userID = null;
+			if (session.getAttribute("userID") != null); {
+				userID = (String) session.getAttribute("userID");
+			}
+		%>
+		<%
+			if(userID == null) {
+		%>
+			<div id="mainMenu">
+				<h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
+				<ul id="itemList" class="clearfix">
+					<li class="menuItem">
+						<a class="pointColor" href="join.jsp">sign up</a>
+					</li>
+					<li class="menuItem">
+						<a href="login.jsp">sign in</a>
+					</li>
+					<li>
+						<a href="bbs.jsp">board</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text" id="search" onkeyup="if(window.event.keyCode==13){filter()}" placeholder="search">
+					<button><img src="./img/search.png" alt="검색버튼이미지" onclick=filter()></button>
+				</div>
+				<button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+					<span class="btnTop"></span>
+					<span class="btnMiddle"></span>
+					<span class="btnBottom"></span>
+				</button>
+				<button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+					<span class="btnRight"></span>
+					<span class="btnLeft"></span>
+				</button>
+			</div>
+		<%
+			} else {
+		%>
+			<div id="mainMenu">
+				<h1><a href="main.jsp"><img src="img/logo.png" alt=""></a></h1>
+				<ul id="itemList" class="clearfix">
+					<li class="menuItem">
+						<a class="pointColor" href="userUpdate.jsp">my page</a>
+					</li>
+					<li class="menuItem">
+						<a href="logoutAction.jsp">sign out</a>
+					</li>
+					<li>
+						<a href="bbs.jsp">board</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text" id="search" onkeyup="if(window.event.keyCode==13){filter()}" placeholder="search">
+					<button><img src="./img/search.png" alt="검색버튼이미지" onclick=filter()></button>
+				</div>
+				<button id="mobileBtn" type="button" class="menuBtn" aria-label="메뉴 열기">
+					<span class="btnTop"></span>
+					<span class="btnMiddle"></span>
+					<span class="btnBottom"></span>
+				</button>
+				<button id="closeBtn" type="button" class="menuClose" aria-label="메뉴 닫기">
+					<span class="btnRight"></span>
+					<span class="btnLeft"></span>
+				</button>
+			</div>
+		<%
+			}
+		%>
+		</header>
 	<div class="container">
 		<div class="signContent">
 			<h2>게시판</h2>
@@ -93,7 +137,7 @@
 			<% 
 				}
 			%>
-			<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+			<a class="boardBtn" href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
