@@ -255,6 +255,7 @@ input::placeholder {
     color: #fff;
     border: 0;
     border-radius: 5px;
+    outline:none;
 }
 
 .lockArea button:hover {
@@ -365,4 +366,20 @@ input::placeholder {
 
 .footerArea dl dd a:hover {
     color: #f5cc0f;
+}
+
+/* board */
+.boardBtn{
+    background:#111;
+    border:0;
+    outline:none;
+}
+.boardBtn{
+    background:#f5cc0f;
+}
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: none;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    border-top: 1px solid #f1f1f1 !important;
 }
