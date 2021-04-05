@@ -385,36 +385,6 @@
             </div>
         </section>
 
-        <!-- 배경 이미지 바꾸기 -->
-        <!-- <section class="bgChange">
-            <ul>
-                <li>
-                    <img src="img/marvel.jpg" title="image 1" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/hulk.jpg" title="image 2" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/ironman.jpg" title="image 3" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/spiderman.jpg" title="image 4" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/spiderman.jpg" title="image 5" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/slide01.jpg" title="image 6" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/slide02.jpg" title="image 7" onclick="imageChange(this)">
-                </li>
-                <li>
-                    <img src="img/slide03.jpg" title="image 8" onclick="imageChange(this)">
-                </li>
-            </ul>
-        </section> -->
-
         <!-- 슬라이드 -->
         <!-- <section>
             <ul class="slide-auto">
