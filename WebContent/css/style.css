@@ -62,7 +62,7 @@ header {
     z-index: 16;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     margin: 0 !important;
 }
@@ -219,7 +219,7 @@ main #itemMenu {
     float: none;
 }
 
-.signContent h1 {
+.signContent h2 {
     font-size: 24px;
     margin-bottom: 40px !important;
 }
@@ -255,6 +255,7 @@ input::placeholder {
     color: #fff;
     border: 0;
     border-radius: 5px;
+    outline:none;
 }
 
 .lockArea button:hover {
@@ -338,6 +339,43 @@ input::placeholder {
     background: #f5cc0f;
     color: #fff;
 }
+/* middleImg */
+.middleImg{
+    background: url(../img/midbanner.jpg)no-repeat 50% 50%;
+    margin-bottom: 100px;
+    background-size: 100%;
+    padding:130px 0;
+}
+.middleImg h2::before{
+    content: '';
+    display: block;
+    border: solid #fff;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+}
+.middleImg h2{
+    color: #fff;
+    font-size: 5rem;
+    padding: 20px 0;
+    position: relative;
+}
+
+.middleImg h2::after{
+    content: '';
+    display: block;
+    border: solid #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+}
+
 
 /* footer */
 #footer {
@@ -365,4 +403,20 @@ input::placeholder {
 
 .footerArea dl dd a:hover {
     color: #f5cc0f;
+}
+
+/* board */
+.boardBtn{
+    background:#111;
+    border:0;
+    outline:none;
+}
+.boardBtn{
+    background:#f5cc0f;
+}
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: none;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    border-top: 1px solid #f1f1f1 !important;
 }

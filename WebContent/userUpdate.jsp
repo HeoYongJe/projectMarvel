@@ -1,15 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>
+<%@ page import="user.UserDAO" %>
+<%@ page import="user.User" %>
+
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width", initial-scale="1">
+<meta name ="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/respons.css">
-<title>JSP 게시판 웹 사이트</title>
+<title>MARVEL</title>
 </head>
 <body>
 	<header>
@@ -84,43 +88,65 @@
 		%>
 		</header>
 	<div class="container">
-		<div class="signContent">
-			<h2>회원가입하기</h2>
-			<div class="jumbotron">
-				<form method="post" action="joinAction.jsp">
-					<div class="form-group lockArea">
-						<input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
-						<button class="overlapBtn">중복검사</button>
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<div class="jumbotron" style="padding-top: 20px;">
+				<form method="post" action="userUpdateAction.jsp">
+					<h3 style="text-align:center;">내 정보</h3>
+					<div class = "form-group">
+						<input type="text" class="form-control" value=<%=user.getUserID()%> name="userID" maxlength="20">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control lockBack" placeholder="비밀번호" name="userPassword" maxlength="20">
-					</div>
-					<div class="form-group lockArea">
-						<input type="text" class="form-control" placeholder="닉네임" name="userName" maxlength="20">
-						<button class="overlapBtn">중복검사</button>
+						<input type="password" class="form-control" value=<%=user.getUserPassword()%> name="userPassword" maxlength="20">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="이름" name="userName" maxlength="20">
+						<input type="text" class="form-control" value=<%=user.getUserName()%> name="userName" maxlength="20">
 					</div>
-					<div class="form-group clearfix">
+					<div class="form-group">
+						<input type="text" class="form-control" value=<%=user.getUserName()%> name="nickName" maxlength="20">
+					</div>
+					<div class="form-group" style="text-align:center;">
 						<div class="btn-group" data-toggle="buttons">
-							<label class="btn btn-primary active">
+						<%
+							if(user.getUserGender().equals("남자")){
+						%>
+							<label class="btn btn-success active">
+						<%
+							} else{
+						%>
+							<label class="btn btn-success">
+						<%
+							}
+						%>		
 								<input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
 							</label>
-							<label class="btn btn-primary">
+						<%
+							if(user.getUserGender().equals("여자")){
+						%>
+								<label class="btn btn-success active">
+						<%
+							} else{
+						%>
+								<label class="btn btn-success">
+						<%
+							}
+						%>	
 								<input type="radio" name="userGender" autocomplete="off" value="여자" checked>여자
 							</label>
 						</div>
 					</div>
-					<div class="form-group ">
-						<input type="email" class="form-control" placeholder="이메일" name="userEmail" maxlength="20">
+					<div class="form-group">
+						<input type="email" class="form-control" value=<%=user.getUserEmail()%> name="userEmail" maxlength="20">
 					</div>
-					<input type="submit" class="btn btn-primory form-control lastBtn" value="회원가입 하기">
-				</form>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+					<input type="submit" class="btn btn-success form-control" value="수정하기"></form>
+					<br>
+            <form method="post" action="userDeleteAction.jsp">
+            <input type="submit" class="btn btn-danger pull-right" value="탈퇴하기">
+            </form>
+
+					</div></div>
+</div></div>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
