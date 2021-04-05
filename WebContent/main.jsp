@@ -133,16 +133,16 @@
             <div class="menuList">
                 <ul>
                     <li>
-                        <button type="button" onclick="filterItem('all')">All</button>
+                        <button type="button" onclick="filterItem('all'); imageChange('all')">All</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('iron')">아이언맨</button>
+                        <button type="button" onclick="filterItem('iron'); imageChange('iron')">아이언맨</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('avengers')">어벤져스</button>
+                        <button type="button" onclick="filterItem('avengers'); imageChange('avengers')">어벤져스</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('spider')">스파이더맨</button>
+                        <button type="button" onclick="filterItem('spider'); imageChange('spider')">스파이더맨</button>
                     </li>
                 </ul>
             </div>
@@ -384,30 +384,46 @@
                 <h2>MARVEL</h2>
             </div>
         </section>
-        <!-- 슬라이드 -->
-        <section>
-            <div class="slide-auto">
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-            </div>
-        </section>
 
-        <!-- 배경 이미지 배너 -->
-        <section class="banner">
+        <!-- 배경 이미지 바꾸기 -->
+        <!-- <section class="bgChange">
             <ul>
-                <li><img src="img/marvel.jpg" title="image 1" onclick="imageChange(this)"></li>
-                <li><img src="img/hulk.jpg" title="image 2" onclick="imageChange(this)"></li>
-                <li><img src="img/ironman.jpg" title="image 3" onclick="imageChange(this)"></li>
-                <li><img src="img/spiderman.jpg" title="image 4" onclick="imageChange(this)"></li>
-                <li><img src="img/spiderman.jpg" title="image 5" onclick="imageChange(this)"></li>
-                <li><img src="img/slide01.jpg" title="image 6" onclick="imageChange(this)"></li>
-                <li><img src="img/slide02.jpg" title="image 7" onclick="imageChange(this)"></li>
-                <li><img src="img/slide03.jpg" title="image 8" onclick="imageChange(this)"></li>
+                <li>
+                    <img src="img/marvel.jpg" title="image 1" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/hulk.jpg" title="image 2" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/ironman.jpg" title="image 3" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/spiderman.jpg" title="image 4" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/spiderman.jpg" title="image 5" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/slide01.jpg" title="image 6" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/slide02.jpg" title="image 7" onclick="imageChange(this)">
+                </li>
+                <li>
+                    <img src="img/slide03.jpg" title="image 8" onclick="imageChange(this)">
+                </li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- 슬라이드 -->
+        <!-- <section>
+            <ul class="slide-auto">
+                <li><img src="img/ironman1.png"></li>
+                <li><img src="img/ironman1.png"></li>
+                <li><img src="img/ironman1.png"></li>
+            </ul>
+        </section> -->
+
         <section>
             <ul class="slide-auto">
                 <li class="item">
@@ -478,7 +494,6 @@
             </dl>
         </div>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>

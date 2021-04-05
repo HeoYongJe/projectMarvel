@@ -241,9 +241,23 @@ $(".slide-auto").slick({
 });
 
 // 배경 이미지 변경
-function imageChange(currentImg) {
-  const clickedImage = currentImg.src;
-  const clickedTitle = currentImg.title;
-  document.body.style.backgroundImage = `url(${clickedImage})`;
-  document.getElementById("image-title").innerText = clickedTitle;
+function imageChange(button) {
+  const all = "";
+  const avengers = "어벤져스";
+  const iron = "아이언맨";
+  const spider = "스파이더맨";
+
+  if (button == "avengers") {
+    button = avengers;
+    document.body.style.backgroundImage = "url(./img/avengers1.png)";
+  } else if (button == "iron") {
+    button = iron;
+    document.body.style.backgroundImage = "url(./img/ironman.jpg)";
+  } else if (button == "spider") {
+    button = spider;
+    document.body.style.backgroundImage = "url(./img/spiderman.jpg)";
+  } else {
+    button = all;
+    document.body.style.backgroundImage = "";
+  }
 }

@@ -22,22 +22,4 @@
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.5);
     border: none;
-} */
-
-.slide-auto button .slick-prev {
-    left: 50px;
-    color: transparent;
-}
-
-.slide-auto button .slick-prev:before {
-    content: "\f104";
-}
-
-.slide-auto button .slick-next {
-    right: 50px;
-    color: transparent;
-}
-
-.slide-auto button .slick-prev:after {
-    content: "\f105";
 }
