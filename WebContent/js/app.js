@@ -135,3 +135,19 @@ $closeBtn.addEventListener("click", function () {
   mobileBtn.style.display = "block";
   closeBtn.style.display = "none";
 });
+
+// 슬라이드
+$(".slide-auto").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+// 배경 이미지 변경
+function imageChange(currentImg) {
+  const clickedImage = currentImg.src;
+  const clickedTitle = currentImg.title;
+  document.body.style.backgroundImage = `url(${clickedImage})`;
+  document.getElementById("image-title").innerText = clickedTitle;
+}

@@ -11,7 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/respons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -251,6 +254,69 @@
                 </div>
             </div>
         </section>
+
+        <!-- 배경 이미지 배너 -->
+        <section class="banner">
+            <ul>
+                <li><img src="img/marvel.jpg" title="image 1" onclick="imageChange(this)"></li>
+                <li><img src="img/hulk.jpg" title="image 2" onclick="imageChange(this)"></li>
+                <li><img src="img/ironman.jpg" title="image 3" onclick="imageChange(this)"></li>
+                <li><img src="img/spiderman.jpg" title="image 4" onclick="imageChange(this)"></li>
+                <li><img src="img/spiderman.jpg" title="image 5" onclick="imageChange(this)"></li>
+                <li><img src="img/slide01.jpg" title="image 6" onclick="imageChange(this)"></li>
+                <li><img src="img/slide02.jpg" title="image 7" onclick="imageChange(this)"></li>
+                <li><img src="img/slide03.jpg" title="image 8" onclick="imageChange(this)"></li>
+            </ul>
+        </section>
+
+        <!-- 슬라이드 -->
+        <section>
+            <ul class="slide-auto">
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
     </main>
     <footer id="footer">
         <div class="footerArea">
@@ -275,7 +341,9 @@
         </div>
 
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
