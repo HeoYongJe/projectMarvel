@@ -11,7 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/respons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -130,16 +133,16 @@
             <div class="menuList">
                 <ul>
                     <li>
-                        <button type="button" onclick="filterItem('all')">All</button>
+                        <button type="button" onclick="filterItem('all'); imageChange('all')">All</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('iron')">아이언맨</button>
+                        <button type="button" onclick="filterItem('iron'); imageChange('iron')">아이언맨</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('avengers')">어벤져스</button>
+                        <button type="button" onclick="filterItem('avengers'); imageChange('avengers')">어벤져스</button>
                     </li>
                     <li>
-                        <button type="button" onclick="filterItem('spider')">스파이더맨</button>
+                        <button type="button" onclick="filterItem('spider'); imageChange('spider')">스파이더맨</button>
                     </li>
                 </ul>
             </div>
@@ -326,8 +329,10 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h2 class="modal-title">Avengers:Endgame</h2>
-                    <p class="modal-contents">'호크아이' 클린트는 캡틴 아메리카: 시빌 워에서 소코비아 협정을 위반한 죄로 가택 연금 중이지만 딸에게 활을 쏘는 법을 가르쳐 주며 가족들과 단란한 시간을 보내고 있다. 그런데 점심을 먹으려고 화살을 챙기고 뒤를 돌아본 순간 가족들은 온데간데 없어졌고 그들이 있던 자리에는 먼지만 휘날리고 있다. 타노스가 손가락을 튕긴 순간이었다. 애타게 가족들을 찾는 클린트...</p>
-                    
+                    <p class="modal-contents">'호크아이' 클린트는 캡틴 아메리카: 시빌 워에서 소코비아 협정을 위반한 죄로 가택 연금 중이지만 딸에게 활을 쏘는 법을 가르쳐 주며
+                        가족들과 단란한 시간을 보내고 있다. 그런데 점심을 먹으려고 화살을 챙기고 뒤를 돌아본 순간 가족들은 온데간데 없어졌고 그들이 있던 자리에는 먼지만 휘날리고 있다. 타노스가
+                        손가락을 튕긴 순간이었다. 애타게 가족들을 찾는 클린트...</p>
+
                     <div class="modal-comments clearfix">
                         <input type="text" placeholder="comment">
                         <button>댓글쓰기</button>
@@ -379,14 +384,63 @@
                 <h2>MARVEL</h2>
             </div>
         </section>
+
         <!-- 슬라이드 -->
+        <!-- <section>
+            <ul class="slide-auto">
+                <li><img src="img/ironman1.png"></li>
+                <li><img src="img/ironman1.png"></li>
+                <li><img src="img/ironman1.png"></li>
+            </ul>
+        </section> -->
+
         <section>
-            <div class="slide-auto">
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-                <div><img class="movie-list-item-img" src="img/ironman1.png" alt=""></div>
-            </div>
+            <ul class="slide-auto">
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/hulk.jpg" alt="#" class="character">
+                    <div class="details">
+                        <p class="">[이벤트]</p>
+                        <p class="">현재 진행중</p>
+                    </div>
+                </li>
+            </ul>
         </section>
+
     </main>
     <footer id="footer">
         <div class="footerArea">
@@ -411,7 +465,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
 </body>

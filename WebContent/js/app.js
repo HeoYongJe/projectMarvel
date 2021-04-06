@@ -116,7 +116,6 @@ modalBtn9.addEventListener("click", function () {
   modalBg9.classList.add("bg-active");
 });
 
-
 modalClose1.addEventListener("click", function () {
   modalBg1.classList.remove("bg-active");
 });
@@ -202,7 +201,6 @@ $(".button9").on("click", function () {
   $(".clip9").attr("src", url9);
 });
 
-
 // 모달 닫을때 동영상 종료
 $(".modal-close").on("click", function () {
   $(".modal-clip").attr("src", "");
@@ -235,7 +233,6 @@ $closeBtn.addEventListener("click", function () {
 });
 
 // 슬라이드
-
 $(".slide-auto").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -243,3 +240,24 @@ $(".slide-auto").slick({
   autoplaySpeed: 2000,
 });
 
+// 배경 이미지 변경
+function imageChange(button) {
+  const all = "";
+  const avengers = "어벤져스";
+  const iron = "아이언맨";
+  const spider = "스파이더맨";
+
+  if (button == "avengers") {
+    button = avengers;
+    document.body.style.backgroundImage = "url(./img/avengers1.png)";
+  } else if (button == "iron") {
+    button = iron;
+    document.body.style.backgroundImage = "url(./img/ironman.jpg)";
+  } else if (button == "spider") {
+    button = spider;
+    document.body.style.backgroundImage = "url(./img/spiderman.jpg)";
+  } else {
+    button = all;
+    document.body.style.backgroundImage = "";
+  }
+}
