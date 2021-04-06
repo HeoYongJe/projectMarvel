@@ -1,0 +1,29 @@
+.bgChange {
+    position: relative;
+    background:url("images/image-1.jpg");
+    background-size:cover;
+    
+}
+
+.bgChange > ul {
+  display: flex;
+  list-style: none;  
+}
+
+.bgChange > ul li {
+  margin:0 8px;
+}
+
+.bgChange > ul li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.bgChange > ul li img:hover {
+  transform:rotate(360deg);
+}
+

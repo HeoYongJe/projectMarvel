@@ -1,0 +1,25 @@
+.slide-auto {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 100px 0;
+}
+
+
+.slide-auto .item {
+    position: relative;
+    max-height: 350px;
+}
+
+/* .slide-auto button {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
