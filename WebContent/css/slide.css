@@ -1,0 +1,26 @@
+.slide-auto {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto !important;
+    width: 100%;
+
+}
+
+.bottomSlide{
+    margin-bottom:100px;
+}
+
+.slide-auto .item {
+    position: relative;
+    max-height: 350px;
+}
+
+.slide-auto .item h3{
+    background:#ccc;
+    color:#fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    text-align: center;
+    padding:100px;
+    margin:0;
+}

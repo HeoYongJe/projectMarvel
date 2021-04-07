@@ -2,16 +2,22 @@
     margin: 0;
 }
 
-#item-list-container {
+#itemListContainer{
+    display: flex;
+    align-items: center;
+}
+
+#itemArea{
     max-width: 1170px;
     margin: 0 auto;
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0;  
 }
 
-#item-list-container ul {
+#itemListContainer ul {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .movie-list-item {
@@ -25,6 +31,8 @@
     /* float: left;
     max-height: 230px;
     height: 100%; */
+    background:#fff;
+    
 }
 
 .movie-list-item:hover .movie-list-item-img {
