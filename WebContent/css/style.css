@@ -375,11 +375,73 @@ input::placeholder {
     transform: translate(-50%, -50%);
     border-width: 1px;
 }
+/* marvel store */
+.marvelStore div{
+    max-width: 1170px;
+    width:100%;
+    padding-bottom: 100px;
+    margin:0 auto;
+}
+.marvelStore ul{
+    display:flex;
+    justify-content:space-evenly ;
+}
 
+.marvelStore ul li{
+    width:50%;
+    text-align: center;
+}
+
+.marvelStore ul .storeText{
+    background:#111;
+}
+
+.marvelStore ul .storeText h3::before{
+    content: '';
+    display: block;
+    border: solid #fff;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    max-width: 350px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+}
+
+.marvelStore ul .storeText h3{
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+    padding: 15px 0 20px 0 ;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.marvelStore ul .storeText h3::after{
+    content: '';
+    display: block;
+    border: solid #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    max-width: 350px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+}
+
+.marvelStore ul li img{
+    width:100%;
+}
 
 /* footer */
 #footer {
-    background: #111;
+    background: #333;
 }
 
 #footer .footerArea {

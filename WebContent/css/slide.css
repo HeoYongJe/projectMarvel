@@ -1,25 +1,26 @@
 .slide-auto {
     position: relative;
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     width: 100%;
-    padding: 100px 0;
+
 }
 
+.bottomSlide{
+    margin-bottom:100px;
+}
 
 .slide-auto .item {
     position: relative;
     max-height: 350px;
 }
 
-/* .slide-auto button {
-    position: absolute;
-    z-index: 20;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 71px;
-    height: 71px;
-    border-radius: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
+.slide-auto .item h3{
+    background:#ccc;
+    color:#fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    text-align: center;
+    padding:100px;
+    margin:0;
 }

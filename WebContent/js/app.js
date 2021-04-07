@@ -241,6 +241,8 @@ $(".slide-auto").slick({
 });
 
 // 배경 이미지 변경
+const $itemListContainer = document.getElementById("itemListContainer");
+
 function imageChange(button) {
   const all = "";
   const avengers = "어벤져스";
@@ -249,15 +251,18 @@ function imageChange(button) {
 
   if (button == "avengers") {
     button = avengers;
-    document.body.style.backgroundImage = "url(./img/avengers1.png)";
+    $itemListContainer.style.background = "url(./img/subAvengersBack.jpg)no-repeat 50% 50% fixed";
+    $itemListContainer.style.backgroundSize = "cover"
   } else if (button == "iron") {
     button = iron;
-    document.body.style.backgroundImage = "url(./img/ironman.jpg)";
+    $itemListContainer.style.background = "url(./img/subIronBack3.jpg)no-repeat 50% 50% fixed";
+    $itemListContainer.style.backgroundSize = "cover"
   } else if (button == "spider") {
     button = spider;
-    document.body.style.backgroundImage = "url(./img/spiderman.jpg)";
+    $itemListContainer.style.background = "url(./img/subSpiderBack.jpg)no-repeat 50% 50% fixed";
+    $itemListContainer.style.backgroundSize = "cover"
   } else {
     button = all;
-    document.body.style.backgroundImage = "";
+    $itemListContainer.style.background = "";
   }
 }
