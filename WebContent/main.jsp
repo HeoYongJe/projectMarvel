@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/respons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
@@ -218,13 +217,8 @@
                             allowfullscreen></iframe>
                         <h2 class="modal-title">Iron man1</h2>
                         <p class="modal-contents">천재적인 두뇌와 재능으로 세계 최고의 군수 산업체 스타크 인더스트리를 이끄는 CEO이자, 타고난 매력으로 셀러브리티 못지 않은
-                            화려한
-                            삶을 살아가던 억만장자 토니 스타크는 아프가니스탄에서 자신이 개발한 신무기 발표를 성공리에 마치고 돌아가던 중에 테러리스트의 갑작스런 습격에 의해, 가슴에 치명적인
-                            부상을
-                            입고 그들에게 납치당한다. 테러리스트들은 아프가니스탄에서 발표한 신무기를 만들라고 협박하나,</p>
-                        <p class="modal-contents">토니는 탈출을 위한 철갑슈트를 만드는데 성공하고, 그의 첫 슈트인 ‘Mk.1’을 입고 탈출한다. 미국으로 돌아온 토니 스타크는
-                            자신이
-                            만든 무기가 많은 사람의 생명을 위협하고...</p>
+                            화려한 삶을 살아가던 억만장자 토니 스타크는 아프가니스탄에서 자신이 개발한 신무기 발표를 성공리에 마치고 돌아가던 중에 테러리스트의 갑작스런 습격에 의해, 가슴에 치명적인
+                            부상을 입고 그들에게 납치당한다. 테러리스트들은 아프가니스탄에서 발표한 신무기를 만들라고 협박하는데...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -243,14 +237,10 @@
 
                         <p class="modal-contents">토니는 모나코에서 열린 기업인들의 행사에 참석했다가 옆에서
                             열리던 레이싱 대회에 자신의 회사에서 운영하는 팀의 기존 레이서를 밀어내고 레이서로 참가하는데,[5] 난입한 이반 반코가 아이언맨 슈트와 비슷한 원리의 아크 리액터
-                            기술을
-                            이용한 위플래시 슈트를 장착하고 등장해 깽판을 치면서 토니의 위상은 치명적인 타격을 입는다.
+                            기술을 이용한 위플래시 슈트를 장착하고 등장해 깽판을 치면서 토니의 위상은 치명적인 타격을 입는다.
                         </p>
                         <p class="modal-contents">토니는 휴대용으로 개발된 Mk.5를 입고 그의 아크 리엑터를 뽑아 박살내며 그를 제압했지만, 자신의 기술은 아무도 흉내낼 수
-                            없다고
-                            정부에 큰 소리 빵빵쳤던 토니를 제대로 엿 먹이는데에는 성공한다. 그리고 그 현장을 TV 생중계로 목격한 저스틴 해머는 감옥 신세를 지던 이반 반코를 빼돌려 그를
-                            이용해
-                            스타크 인더스트리를 누르고 압도해낼 개발을하여 토니를 무너뜨릴 계획을 세우는데...
+                            없다고 정부에 큰 소리 빵빵쳤던 토니를 제대로 엿 먹이는데에는 성공하는데...
                         </p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
@@ -262,21 +252,16 @@
 
                 <div class="modal-bg modal3">
                     <div class="modalPop">
-                        <iframe class="modal-clip clip3" src="https://www.youtube.com/embed/UqBfpeO8Tqo"
-                            title="YouTube video player" frameborder="0"
+                        <iframe class="modal-clip clip3" src="https://www.youtube.com/embed/GXLm-sj5XiM" title="YouTube video player"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                         <h2 class="modal-title">Iron man3</h2>
                         <p class="modal-contents">아이언맨 슈트들이 폭발하는 장면과 함께 1999년 12월 31일 토니 스타크의 회상으로 영화가 시작된다. 토니 스타크는 해피
-                            호건과
-                            함께 스위스 베른의 신년 과학 포럼에 참석했는데, 여기서 호 인센과 우 박사 등 유명한 과학자들을 만난 후 마야 한센과 함께 모임을 빠져 나온다. 그러던 중 추한
-                            절름발이
-                            과학자 킬리언을 만나는데, 킬리언은 토니와 한센에게 자신의 명함을 주면서 자신이 소속된 민간 싱크탱크 A.I.M.(Advanced Idea Mechanics)으로 와
-                            달라고
-                            얘기한다. 토니는 킬리언에게 나중에 옥상에서 만나자며 거짓말을 하고,</p>
-                        <p class="modal-contents">킬리언은 그 말을 믿고 아무도 없는 옥상으로 올라가서 한없이 기다리며 새해를 맞이한다. 한편 스타크와 한센은 밤늦게까지 한센이
-                            만든
-                            기술에 관해서 토론하는데, 도중에 익스트리미스를 주입받은 식물이 폭발한다. 이후 한센과 밤을 보낸 토니는 명함만 남겨두고 떠나는데...</p>
+                            호건과 함께 스위스 베른의 신년 과학 포럼에 참석했는데, 여기서 호 인센과 우 박사 등 유명한 과학자들을 만난 후 마야 한센과 함께 모임을 빠져 나온다. 그러던 중 추한
+                            절름발이 과학자 킬리언을 만나는데,</p>
+                        <p class="modal-contents">킬리언은 토니와 한센에게 자신의 명함을 주면서 자신이 소속된 민간 싱크탱크 A.I.M.(Advanced Idea Mechanics)으로 와
+                            달라고 얘기한다. 토니는 킬리언에게 나중에 옥상에서 만나자며 거짓말을 하고...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -293,10 +278,8 @@
                             allowfullscreen></iframe>
                         <h2 class="modal-title">Avengers1</h2>
                         <p class="modal-contents">쉴드가 세운 암흑 에너지 연구소에서는 테서랙트의 연구가 진행되는 중이었는데, 갑자기 테서랙트가 발동하며 로키가 등장한다.
-                            로키는 쉴드
-                            요원들을 전멸시키고 호크아이, 셀빅을 포함한 일부 요원들을 세뇌하여 자기 부하로 만든 후 테서랙트를 가지고 떠난다. 연구소가 테서랙트의 폭주로 폭발하는 가운데 닉
-                            퓨리와
-                            마리아 힐은 간신히 탈출하고, 퓨리는 슈퍼 히어로들을 소집하는 '어벤져스 프로젝트'를 실행하기로 결정하는데...</p>
+                            로키는 쉴드 요원들을 전멸시키고 호크아이, 셀빅을 포함한 일부 요원들을 세뇌하여 자기 부하로 만든 후 테서랙트를 가지고 떠난다. 연구소가 테서랙트의 폭주로 폭발하는 가운데 닉
+                            퓨리와 마리아 힐은 간신히 탈출하고, 퓨리는 슈퍼 히어로들을 소집하는 '어벤져스 프로젝트'를 실행하기로 결정하는데...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -313,11 +296,9 @@
                             allowfullscreen></iframe>
                         <h2 class="modal-title">The Avengers: Age of Ultron</h2>
                         <p class="modal-contents">소코비아의 숲 속 어딘가에서 어벤져스와 하이드라 잔당의 교전이 시작된다. 어벤져스의 임무는 이곳에 있는 하이드라의 비밀 기지에
-                            숨겨진
-                            로키의 치타우리 셉터를 되찾는 것. 전투가 벌어지던 도중에 스트러커 남작은 대원들의 사기를 북돋우며 하이드라에게 항복은 없다고 연설한다.</p>
+                            숨겨진 로키의 치타우리 셉터를 되찾는 것. 전투가 벌어지던 도중에 스트러커 남작은 대원들의 사기를 북돋우며 하이드라에게 항복은 없다고 연설한다.</p>
                         <p class="modal-contents">데이터를 모조리 삭제할 것을 명령하고 혼자서 도주를 시도한다. 기지를 둘러싸고 있던 에너지 방어막이 아이언맨에 의해 무력화되자
-                            기지
-                            내부는 순식간에 혼돈에 휩싸인다. 이 와중에 스트러커 남작이 숨기고 있던 강화 인간 쌍둥이 막시모프 남매가 기지에서 탈출하는데...</p>
+                            기지 내부는 순식간에 혼돈에 휩싸인다. 이 와중에 스트러커 남작이 숨기고 있던 강화 인간 쌍둥이 막시모프 남매가 기지에서 탈출하는데...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -334,13 +315,10 @@
                             allowfullscreen></iframe>
                         <h2 class="modal-title">Avengers:Infinity War</h2>
                         <p class="modal-contents">타노스의 양자식들이자 부하인 블랙 오더의 에보니 모가 쓰러진 아스가르드인들 사이에서 "너희는 죽음으로 타노스의 자녀가 됐다"
-                            라고
-                            말하며 걷는다. 헤임달도 부상을 입고 토르도 크게 당한 듯 타노스의 발 밑에 쓰러진 상태. 이미 인피니티 건틀릿에 파워 스톤을 장착한 타노스는 쓰러져 있는 토르의
-                            머리를
-                            손아귀에 쥐고서 로키에게 형이 죽는 걸 보고 싶지 않으면 스페이스 스톤을 내놓으라고 하지만, 로키는 태연한 척 외면한다. </p>
+                            라고 말하며 걷는다. 헤임달도 부상을 입고 토르도 크게 당한 듯 타노스의 발 밑에 쓰러진 상태. 이미 인피니티 건틀릿에 파워 스톤을 장착한 타노스는 쓰러져 있는 토르의
+                            머리를 손아귀에 쥐고서 로키에게 형이 죽는 걸 보고 싶지 않으면 스페이스 스톤을 내놓으라고 하지만, 로키는 태연한 척 외면한다. </p>
                         <p class="modal-contents">그러나 타노스가 토르에게 파워 스톤을 이용한 고문을 가하자, 로키는 보다 못해 그만두라고 외치며 테서랙트를 꺼내든다. 토르는
-                            정말로
-                            자신들에게 없고 아스가르드에서 파괴됐다고 생각했는데, 로키가 몰래 가져온걸 꺼내들자 "넌 최악의 동생" 이라고 한다. 이에 로키는 의미심장한 말을 하는데...</p>
+                            정말로 자신들에게 없고 아스가르드에서 파괴됐다고 생각했는데, 로키가 몰래 가져온걸 꺼내들자 "넌 최악의 동생" 이라고 한다. 이에 로키는 의미심장한 말을 하는데...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -357,10 +335,8 @@
                             allowfullscreen></iframe>
                         <h2 class="modal-title">Avengers:Endgame</h2>
                         <p class="modal-contents">'호크아이' 클린트는 캡틴 아메리카: 시빌 워에서 소코비아 협정을 위반한 죄로 가택 연금 중이지만 딸에게 활을 쏘는 법을
-                            가르쳐 주며
-                            가족들과 단란한 시간을 보내고 있다. 그런데 점심을 먹으려고 화살을 챙기고 뒤를 돌아본 순간 가족들은 온데간데 없어졌고 그들이 있던 자리에는 먼지만 휘날리고 있다.
-                            타노스가
-                            손가락을 튕긴 순간이었다. 애타게 가족들을 찾는 클린트...</p>
+                            가르쳐 주며 가족들과 단란한 시간을 보내고 있다. 그런데 점심을 먹으려고 화살을 챙기고 뒤를 돌아본 순간 가족들은 온데간데 없어졌고 그들이 있던 자리에는 먼지만 휘날리고 있다.
+                            타노스가 손가락을 튕긴 순간이었다. 애타게 가족들을 찾는 클린트...</p>
 
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
@@ -401,8 +377,7 @@
                             힐에게 닉 퓨리는 주민들이 태풍에 얼굴이 달린 걸 봤다더라며 얘기하고 힐은 놀란 주민들의 헛소문이라고 단정짓는다. 그런데 그 때 땅 속에서 거대한 존재가 솟아오르고,
                             이에 대적하는듯한 사람이 나타나며 오프닝이 끝난다.</p>
                         <p class="modal-contents">타이틀 롤은 늘 마블 영화마다 따라다니던 마블 스튜디오의 로고가 등장하면서 엔드게임에서 사망하거나 은퇴한 토니 스타크, 스티브
-                            로저스, 나타샤 로마노프, 비전을 추모하는 고등학교 교내 방송으로 이어진다.[1] 방송 캐스터 베티 브랜트와 제이슨 아이오넬로는 타노스의 핑거스냅으로 사람들이
-                            사라졌던...</p>
+                            로저스, 나타샤 로마노프, 비전을 추모하는 고등학교 교내 방송으로 이어지는데...</p>
                         <div class="modal-comments clearfix">
                             <input type="text" placeholder="comment">
                             <button>댓글쓰기</button>
@@ -466,7 +441,9 @@
         <section class="marvelStore">
             <div>
                 <ul>
-                    <li class="storeText"><h3>marvel store</h3></li>
+                    <li class="storeText">
+                        <h3>marvel store</h3>
+                    </li>
                     <li><img src="img/map.jpg" alt="지도이미지"></li>
                 </ul>
             </div>

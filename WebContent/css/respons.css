@@ -74,12 +74,12 @@
         z-index: 1 !important;
     }
 
-    #itemListContainer{
-        background:none !important;
+    #itemListContainer {
+        background: none !important;
     }
 
-    #itemArea{
-        padding:50px 0;
+    #itemArea {
+        padding: 50px 0;
     }
 
     #item-list-container {
@@ -103,6 +103,7 @@
         background: rgba(0, 0, 0, 0.92);
         position: fixed;
         top: 0;
+        left: 0;
         z-index: 15 !important;
         padding: 50px;
     }
@@ -194,11 +195,11 @@
     }
 
     .modal-comments input {
-        width: 70%;
+        width: 65%;
     }
 
     .modal-comments button {
-        width: 25%;
+        width: 30%;
         font-size: 14px;
         transition: .3s;
     }
@@ -210,14 +211,16 @@
         transition: .2s;
     }
 
-    .slide-auto .item h3{
-        padding:50px 20px;
-        font-size:15px;
+    .slide-auto .item h3 {
+        padding: 50px 20px;
+        font-size: 15px;
     }
 
     .slick-prev,
     .slick-next {
-        top:50%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
     }
 
     .slick-prev {
@@ -228,18 +231,22 @@
         right: 3% !important;
     }
 
-    .slick-prev:before, .slick-next:before{
-        font-size:20px;
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 20px;
     }
-    .middleImg{
+
+    .middleImg {
         background: url(../img/midbanner.jpg)no-repeat 3% 50%;
         background-size: auto;
     }
-    .marvelStore div{
-        padding-bottom:0;
+
+    .marvelStore div {
+        padding-bottom: 0;
     }
-    .marvelStore ul .storeText h3{
-        font-size:3rem;
+
+    .marvelStore ul .storeText h3 {
+        font-size: 3rem;
     }
 }
 
