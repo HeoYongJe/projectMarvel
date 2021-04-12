@@ -131,6 +131,7 @@ header #mainMenu {
     justify-content: center;
     align-items: center;
     width: 60px;
+    height:100%;
     background: 0;
     border: 0;
 }
@@ -268,6 +269,7 @@ input::placeholder {
     height: auto;
     padding: 10px 12px;
     border-radius: 5px;
+    box-shadow: none;
 }
 
 .btn-group {
@@ -515,4 +517,12 @@ input::placeholder {
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
     border-top: 1px solid #ccc !important;
+}
+
+.writeText tbody tr td{
+    border:0 !important;
+}
+
+.writeText tr .form-control{
+    border:1px solid #eee;
 }
